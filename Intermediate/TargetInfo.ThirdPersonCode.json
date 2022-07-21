@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ThirdPersonCode",
+			"Path": "C:\\Users\\erocc\\Desktop\\ThirdPersonCode\\Source\\ThirdPersonCode.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ThirdPersonCodeEditor",
+			"Path": "C:\\Users\\erocc\\Desktop\\ThirdPersonCode\\Source\\ThirdPersonCodeEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

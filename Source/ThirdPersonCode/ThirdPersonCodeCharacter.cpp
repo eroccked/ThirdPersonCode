@@ -7,7 +7,9 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
+#include "GameFramework/ProjectileMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Bullet.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AThirdPersonCodeCharacter
@@ -57,6 +59,8 @@ void AThirdPersonCodeCharacter::SetupPlayerInputComponent(class UInputComponent*
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &AThirdPersonCodeCharacter::Shoot);
+
 	PlayerInputComponent->BindAxis("MoveForward", this, &AThirdPersonCodeCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AThirdPersonCodeCharacter::MoveRight);
 
@@ -76,6 +80,20 @@ void AThirdPersonCodeCharacter::SetupPlayerInputComponent(class UInputComponent*
 	PlayerInputComponent->BindAction("ResetVR", IE_Pressed, this, &AThirdPersonCodeCharacter::OnResetVR);
 }
 
+
+void AThirdPersonCodeCharacter::Shoot()
+{
+	//UE_LOG(LogTemp, Warning, TEXT("bang bang")); logs
+
+	FTransform SpawnTransform = GetActorTransform();
+
+	SpawnTransform.SetLocation(FollowCamera->GetComponentRotation().Vector() * 200.f + GetActorLocation());
+
+
+	FActorSpawnParameters SpawnParam;
+
+	GetWorld()->SpawnActor<ABullet>(BulletBP, SpawnTransform, SpawnParam);
+}
 
 void AThirdPersonCodeCharacter::OnResetVR()
 {

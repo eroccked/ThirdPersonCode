@@ -29,7 +29,12 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(EditAnywhere, Category = "Shooting")
+	TSubclassOf<class ABullet> BulletBP;
+
 protected:
+
+	void Shoot();
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();

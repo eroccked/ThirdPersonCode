@@ -19,6 +19,8 @@ void EmptyLinkFunctionForGeneratedCodeThirdPersonCodeCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_ThirdPersonCode();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	THIRDPERSONCODE_API UClass* Z_Construct_UClass_ABullet_NoRegister();
 // End Cross Module References
 	void AThirdPersonCodeCharacter::StaticRegisterNativesAThirdPersonCodeCharacter()
 	{
@@ -49,6 +51,10 @@ void EmptyLinkFunctionForGeneratedCodeThirdPersonCodeCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BaseLookUpRate_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_BaseLookUpRate;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_BulletBP_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_BulletBP;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -104,11 +110,19 @@ void EmptyLinkFunctionForGeneratedCodeThirdPersonCodeCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BaseLookUpRate = { "BaseLookUpRate", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThirdPersonCodeCharacter, BaseLookUpRate), METADATA_PARAMS(Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BaseLookUpRate_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BaseLookUpRate_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BulletBP_MetaData[] = {
+		{ "Category", "Shooting" },
+		{ "ModuleRelativePath", "ThirdPersonCodeCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BulletBP = { "BulletBP", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AThirdPersonCodeCharacter, BulletBP), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BulletBP_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BulletBP_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BaseTurnRate,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BaseLookUpRate,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::NewProp_BulletBP,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AThirdPersonCodeCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AThirdPersonCodeCharacter>::IsAbstract,
@@ -137,7 +151,7 @@ void EmptyLinkFunctionForGeneratedCodeThirdPersonCodeCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AThirdPersonCodeCharacter, 2659848803);
+	IMPLEMENT_CLASS(AThirdPersonCodeCharacter, 59483577);
 	template<> THIRDPERSONCODE_API UClass* StaticClass<AThirdPersonCodeCharacter>()
 	{
 		return AThirdPersonCodeCharacter::StaticClass();

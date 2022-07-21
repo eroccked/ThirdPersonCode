@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ThirdPersonCode.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{447636AC-A321-457A-97A1-B494C579396C}</UniqueIdentifier>
+      <UniqueIdentifier>{4F06E3B5-6F5A-48C4-99D4-5B317325F0B3}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ThirdPersonCode.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,11 @@
     <None Include="..\..\Source\ThirdPersonCodeEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\README.md" />
     <Filter Include="Config">
-      <UniqueIdentifier>{2B94D5CD-1859-4F15-8D73-9178EDF5751C}</UniqueIdentifier>
+      <UniqueIdentifier>{8852B9DC-A173-4EBA-B331-90D487B6BC0F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +33,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ThirdPersonCode">
-      <UniqueIdentifier>{EDEDA63E-BFD5-4D15-BC8A-805EEE2BCB20}</UniqueIdentifier>
+      <UniqueIdentifier>{06640253-4D71-4E01-B4CD-9D33EFA695D2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ThirdPersonCode\Bullet.cpp">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonCode\Bullet.h">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ThirdPersonCode\ThirdPersonCode.Build.cs">
       <Filter>Source\ThirdPersonCode</Filter>
     </None>
