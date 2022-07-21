@@ -1,0 +1,2 @@
+C:\Users\erocc\Desktop\ThirdPersonCode\Intermediate\Build\Win64\UE4Editor\Development\ThirdPersonCode\Definitions.ThirdPersonCode.h
+C:\Users\erocc\Desktop\ThirdPersonCode\Source\ThirdPersonCode\ThirdPersonCode.h

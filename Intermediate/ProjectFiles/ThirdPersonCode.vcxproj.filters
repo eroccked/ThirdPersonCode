@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ThirdPersonCode.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{447636AC-A321-457A-97A1-B494C579396C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThirdPersonCode.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ThirdPersonCodeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{2B94D5CD-1859-4F15-8D73-9178EDF5751C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ThirdPersonCode">
+      <UniqueIdentifier>{EDEDA63E-BFD5-4D15-BC8A-805EEE2BCB20}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ThirdPersonCode\ThirdPersonCode.Build.cs">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ThirdPersonCode\ThirdPersonCode.cpp">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonCode\ThirdPersonCode.h">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThirdPersonCode\ThirdPersonCodeCharacter.cpp">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonCode\ThirdPersonCodeCharacter.h">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThirdPersonCode\ThirdPersonCodeGameMode.cpp">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThirdPersonCode\ThirdPersonCodeGameMode.h">
+      <Filter>Source\ThirdPersonCode</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
